@@ -1,0 +1,25 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10px;
+  align-items: center;
+}
+
+.screen-header__title {
+  font-size: 32px;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+.screen-header__icons__dot {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }  
+    div {
+      height: 200px;
+      width: 200px;
+      background-color: teal;
+    }
+
+    span {
+      font-size : 36px;
+    }
+     @media screen and (min-width: 601px) and (max-width: 1000px) and (orientation: landscape) {
+      div {
+        background-color: beige;   
+      }
+     } 
+
+     @media screen and (orientation: landscape) {
+       span {
+         display: none;
+       }
+     }
+
+     @media print {
+       body {
+         background-color: tomato;
+       }
+     }
+  </style>
+</head>
+<body>
+  <div></div>
+  <span>Please flip your phone :( </span>
+</body>
+</html>

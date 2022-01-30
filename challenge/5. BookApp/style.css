@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 클릭하거나 탭할 때 작동 */
+input:focus {
+  outline: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 360px;
+    /* 속성이 자신보다 커지는 걸 방지(사진크기 제한) */
+  margin: 0 auto;
+    /* 대표적인 중앙정렬 속성 */
+  padding-bottom: 20px;
+}
+
+header {
+  background-color: #FDCC32;
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px;
+  padding-bottom: 50px;
+}
+
+/* header의 자식들의 width 33% 주며 거리 띄우기 */
+header > * {
+  width: 33%
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+header i:last-child {
+  text-align: right;
+}
+
+/*  위로 올릴 때 top: -30 이런 식으로..  */
+.search { 
+  width: 95%; 
+    /* header에 꽉 차지 않게 넓이 조정 */
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+    /* box의 크기를 키우고 싶을 땐 padding */
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
+    /* rgba(0,0,0,0.10) 투명도 */
+}
+
+/* 콜론2개(::)는 가상요소를 표시 */
+  /* 태그안의 속성 혹은 단락의 첫글자, 첫줄 등을 표시할 수 있음 */
+input::placeholder {
+  opacity: 0.7;
+}
+
+.search i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: rgba(0,0,0,0.3);
+}
+
+main {
+  padding: 0px 15px;
+}
+
+main h2 {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size:20px;
+  margin-bottom: 20px;
+}
+
+.featured-book {
+  display: flex;
+}
+
+.featured-book__cover {
+  width: 110px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.featured-book__data {
+  width: 100%;
+  /* 넘어가지 않게 크기 제한 */
+}
+
+.featured-book__title {
+  font-size:18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.featured-book__author {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.featured-book__rating {
+  color:#FDCC32;
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+.featured-book__rating i:last-child {
+  color:#F7F7F7;
+}
+
+.featured-book__tags {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.featured-book__tag {
+  background-color: #F7F7F7;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+}
+
+.featured-book__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-book__bookmark {
+  background-color: #FDCC32;
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* 글자에 패딩을 주고 배경을 입히면 박스가 됨 */
+.featured-book__book {
+  background: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 40px;
+  display: block;
+  border-radius: 5px;
+}
+
+/* overflow-x : width를 초과한 부분 처리 
+    많이 쓰는 옵션 scroll, hiddedn  */
+.top-books {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 15px;
+}
+
+.top-books__book {
+  margin-right: 20px;
+}
+
+.top-books__book img {
+  width: 68px;
+  border-radius: 3px;
+}
+
+.top-books__rating {
+  color: #FDCC32;
+  font-size: 8px;
+  margin-top:10px;
+  display: block;
+  text-align: center;
+}
+
+.popular {
+  display: flex;
+}
+
+.popular img {
+  width: 140px;
+  border-radius: 5px;
+  margin-right: 20px;
+  display: block;
+} 
+
+.popular__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.popular__bio {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
