@@ -1,4 +1,5 @@
 .screen-header {
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   padding: 25px 10px;
