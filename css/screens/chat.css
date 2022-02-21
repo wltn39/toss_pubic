@@ -44,6 +44,18 @@
   animation: fadeIn 1s linear;
 }
 
+#chat-screen > main > div:nth-child(4) > div > div > span.message__bubble {
+  animation: fadeIn 2s linear;
+}
+
+#chat-screen > main > div:nth-child(5) > div > div > span.message__bubble {
+  animation: fadeIn 3s linear;
+}
+
+#chat-screen > main > div:nth-child(6) > div > div > span.message__bubble {
+  animation: fadeIn 4s linear;
+}
+
 .chat__timestamp {
   background-color: #92a4b2;
   padding: 10px 25px;
